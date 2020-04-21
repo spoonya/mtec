@@ -1,0 +1,76 @@
+.hdr
+    background-color: $color-secondary-light
+    padding: 15px 0
+    border-bottom: 2px solid $color-tertiary
+    margin-bottom: 100px
+
+.hdr-container
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.hdr__logo-container
+    display: flex
+    align-items: center
+
+.hdr__logo-link
+    width: 100px
+    height: 100px
+
+.hdr__logo-img
+    width: 100%
+    height: auto
+
+.hdr__logo-desc
+    font-family: $font-title
+    margin-left: 20px
+    max-width: 270px
+
+.hdr__contacts-items
+    margin-bottom: 10px
+
+.hdr__soc-items
+    display: flex
+    justify-content: flex-end
+
+.hdr__contact-item 
+    a
+        font-family: $font-title
+        color: $color-primary-dark
+        transition: color .3s
+    &:hover
+        a
+            color: $color-secondary-dark
+            transition: color .3s
+        .hdr__contact-icon
+            fill: $color-secondary-dark
+            transition: fill .3s
+
+.hdr__contact
+    display: flex
+    align-items: center
+
+.hdr__contact-icon
+    width: 14px
+    height: 14px
+    margin-right: 5px
+    fill: $color-primary-dark
+    transition: fill .3s
+
+a.hdr__soc
+    background: $color-primary-light
+    width: 30px
+    height: 30px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-left: 10px
+    border-radius: 3px
+    transition: background .3s !important
+    &:hover
+        background: $color-tertiary
+
+.hdr__soc-icon
+    width: 17px
+    height: 17px
+    fill: $color-secondary-light

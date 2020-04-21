@@ -10,3 +10,22 @@ html(lang="ru")
 		script(type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js")
 	body
 		include svg.pug
+		//- Hdr
+		header.hdr
+			.hdr-container.container
+				.hdr__logo-container
+					a(href="#").hdr__logo-link
+						img(src="img/logo.jpg", alt="Молодечненский торгово-экономический колледж").hdr__logo-img
+					p.hdr__logo-desc Молодечненский торгово-экономический колледж
+				.hdr__contacts-container
+					ul.hdr__contacts-items
+						li.hdr__contact-item: a(href="mailto: mail@mtec.by").hdr__contact 
+							svg.hdr__contact-icon: use(xlink:href="#icon-email") 
+							|mail@mtec.by
+						li.hdr__contact-item: a(href="tel: (0176) 55-07-50").hdr__contact
+							svg.hdr__contact-icon: use(xlink:href="#icon-phone") 
+							|(0176) 55-07-50
+					ul.hdr__soc-items
+						li.hdr__contact-item: a(href="https://vk.com/mtecby", target="_blank").hdr__soc: svg.hdr__soc-icon: use(xlink:href="#icon-vk")
+						li.hdr__contact-item: a(href="https://twitter.com/by_mtec").hdr__soc: svg.hdr__soc-icon: use(xlink:href="#icon-twitter")
+						li.hdr__contact-item: a(href="https://www.youtube.com/channel/UC4B6JgjjmeZrhMnGlAx9bew").hdr__soc: svg.hdr__soc-icon: use(xlink:href="#icon-youtube")
