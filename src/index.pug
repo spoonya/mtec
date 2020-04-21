@@ -1,5 +1,41 @@
 include pug_includes/header.pug
 
+//- Spec
+section.spec
+    .container
+        h2.spec__title Наши специальности 
+        .spec__inner
+            .spec__item
+                svg.spec__item-icon 
+                    use(xlink:href="#law")
+                h3.spec__item-title Правоведение
+            .spec__item
+                svg.spec__item-icon 
+                    use(xlink:href="#logistics")
+                h3.spec__item-title Операционная деятельность в логистике
+            .spec__item
+                svg.spec__item-icon 
+                    use(xlink:href="#accounting")
+                h3.spec__item-title Бухгалтерский учёт, анализ и контроль          
+            .spec__item
+                svg.spec__item-icon 
+                    use(xlink:href="#code")
+                h3.spec__item-title Программное обеспечение информационных технологий
+            iframe(width='560', height='315', src='https://www.youtube.com/embed/LSUEBq0XxXw', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
 
-
+//- News
+section.news
+    .container
+        h2.news__title Последние новости
+        .news__inner    
+            .news__item
+                img.news__item-img(src="img/index/ponasenkov.jpg")
+                .news__item-content
+                    p.news__item-txt Новость
+                    .news__item-info
+                        p.news__item-date 22.05.2020
+                        .news__item-views-wrap
+                            svg.news-icon 
+                                use(xlink:href="#views")
+                            p.news__item-views 153
 include pug_includes/footer.pug

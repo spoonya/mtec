@@ -1,0 +1,85 @@
+.spec
+    padding: 25px 0
+
+.spec__inner
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+
+.spec__title
+    @include title
+
+.spec__item
+    text-align: center
+    width: 50%
+    margin-bottom: 30px
+    padding: 0 150px
+    margin-bottom: 50px
+
+.spec__item-icon
+    fill: $color-primary-light
+    width: 80px
+    height: 80px
+    margin-bottom: 15px
+
+.video 
+    display: flex
+    align-items: center
+    padding: 25px 0
+    flex-direction: column
+
+.news
+    padding: 25px 0
+
+.news__title 
+    @include title
+
+.news__inner
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+.news__item
+    display: flex;
+    flex-direction: column
+    max-width: 272px;
+    width: 100%
+    max-height: 500px
+    height: 100%
+    margin-bottom: 50px
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1)
+
+.news__item-img
+    min-width: 272px;
+    max-width: 272px;
+    min-height: 153px;
+    max-height: 153px;
+
+    object-fit: cover;
+
+.news__item-content
+    display: flex
+    flex-direction: column
+    padding: 15px
+
+.news__item-txt
+    font-weight: 600
+    min-height: 100px;
+    max-height: 100px;
+    overflow: hidden
+    margin-bottom: 20px
+
+.news__item-info
+    display: flex
+    justify-content: space-between  
+    font-size: 14px
+
+.news-icon
+    height: 15px
+    width: 15px
+    margin-right: 5px
+
+.news__item-views-wrap
+    display: flex
+    align-items: center
