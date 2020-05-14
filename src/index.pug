@@ -1,10 +1,83 @@
 include pug_includes/header.pug
 
+//- Intro
+section.intro(style='background-image: url(img/index/bg.jpg)')
+    .container
+        .intro__inner
+            h1.intro__title Мтэк
+            ul.intro__social
+                li.intro__social-item: a(href="https://vk.com/mtecby", target="_blank").intro__soc: svg.intro__soc-icon: use(xlink:href="#icon-vk")
+                li.intro__social-item: a(href="https://twitter.com/by_mtec").intro__soc: svg.intro__soc-icon: use(xlink:href="#icon-twitter")
+                li.intro__social-item: a(href="https://www.youtube.com/channel/UC4B6JgjjmeZrhMnGlAx9bew").intro__soc: svg.intro__soc-icon: use(xlink:href="#icon-youtube")
+            .intro__bot
+                p.intro__bot-txt У нас только престижные специальности!
+                a.intro__bot-link(href="#") История
+
 //- News
 section.news
     .container
         h2.news__title Последние новости
         .news__inner    
+            .news__item
+                a.news__item-link(href="#")
+                img.news__item-img(src="img/index/ponasenkov.jpg")
+                .news__item-content
+                    p.news__item-txt Новость
+                    .news__item-info
+                        p.news__item-date 30.05.2020
+                        .news__item-views-wrap
+                            svg.news-icon 
+                                use(xlink:href="#views")
+                            p.news__item-views 200
+
+            .news__item
+                a.news__item-link(href="#")
+                img.news__item-img(src="img/index/goblin.jpg")
+                .news__item-content
+                    p.news__item-txt Новость
+                    .news__item-info
+                        p.news__item-date 29.05.2020
+                        .news__item-views-wrap
+                            svg.news-icon 
+                                use(xlink:href="#views")
+                            p.news__item-views 112
+            
+            .news__item
+                a.news__item-link(href="#")
+                img.news__item-img(src="img/index/mad.jpg")
+                .news__item-content
+                    p.news__item-txt Новость
+                    .news__item-info
+                        p.news__item-date 29.05.2020
+                        .news__item-views-wrap
+                            svg.news-icon 
+                                use(xlink:href="#views")
+                            p.news__item-views 153
+
+            .news__item
+                a.news__item-link(href="#")
+                img.news__item-img(src="img/index/road.jpg")
+                .news__item-content
+                    p.news__item-txt Новость
+                    .news__item-info
+                        p.news__item-date 25.05.2020
+                        .news__item-views-wrap
+                            svg.news-icon 
+                                use(xlink:href="#views")
+                            p.news__item-views 777
+
+            .news__item
+                a.news__item-link(href="#")
+                img.news__item-img(src="img/index/vano.jpg")
+                .news__item-content
+                    p.news__item-txt Новость
+                    .news__item-info
+                        p.news__item-date 23.05.2020
+                        .news__item-views-wrap
+                            svg.news-icon 
+                                use(xlink:href="#views")
+                            p.news__item-views 85
+            
             .news__item
                 a.news__item-link(href="#")
                 img.news__item-img(src="img/index/ponasenkov.jpg")
@@ -35,35 +108,14 @@ section.news
                 .news__item-content
                     p.news__item-txt Новость
                     .news__item-info
-                        p.news__item-date 22.05.2020
+                        p.news__item-date 15.05.2020
                         .news__item-views-wrap
                             svg.news-icon 
                                 use(xlink:href="#views")
                             p.news__item-views 153
+                            
+        a.news__archive-link(href="#") Архив новостей
 
-            .news__item
-                a.news__item-link(href="#")
-                img.news__item-img(src="img/index/road.jpg")
-                .news__item-content
-                    p.news__item-txt Новость
-                    .news__item-info
-                        p.news__item-date 22.05.2020
-                        .news__item-views-wrap
-                            svg.news-icon 
-                                use(xlink:href="#views")
-                            p.news__item-views 777
-
-            .news__item
-                a.news__item-link(href="#")
-                img.news__item-img(src="img/index/vano.jpg")
-                .news__item-content
-                    p.news__item-txt Новость
-                    .news__item-info
-                        p.news__item-date 22.05.2020
-                        .news__item-views-wrap
-                            svg.news-icon 
-                                use(xlink:href="#views")
-                            p.news__item-views 85
 
 //- Spec
 section.spec
