@@ -1,5 +1,5 @@
 .spec
-    padding: 25px 0
+    padding: 35px 0
 
 .spec__inner
     display: flex
@@ -19,12 +19,17 @@
 
 .spec__item-wrap
     padding: 10px
+
     transition: box-shadow .15s linear
+
     min-height: 200px
     display: flex
     flex-direction: column
     justify-content: center
     align-items: center
+
+    border: 1px $color-primary-light solid
+    border-radius: 35px
 
 .spec__item-icon
     fill: $color-primary-light
@@ -32,6 +37,9 @@
     height: 80px
     margin-bottom: 15px
 
+.spec__item-title
+    color: $color-primary-light
+    
 .spec__item-link
     width: 50%
     height: 100%
