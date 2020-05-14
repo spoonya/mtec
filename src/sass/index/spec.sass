@@ -1,0 +1,44 @@
+.spec
+    padding: 25px 0
+
+.spec__inner
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+
+.spec__title
+    @include title
+
+.spec__item
+    position: relative
+    text-align: center
+    width: 50%
+    margin-bottom: 30px
+    padding: 0 150px
+    margin-bottom: 50px
+
+.spec__item-wrap
+    padding: 10px
+    transition: box-shadow .15s linear
+    min-height: 200px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+.spec__item-icon
+    fill: $color-primary-light
+    width: 80px
+    height: 80px
+    margin-bottom: 15px
+
+.spec__item-link
+    width: 50%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+
+.spec__item-link:hover ~ .spec__item-wrap
+    box-shadow: 0 0 20px rgba(0, 0, 0, .15)
