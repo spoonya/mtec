@@ -1,74 +1,37 @@
 .hdr
+<<<<<<< HEAD
     background-color: $color-secondary-light
     padding: 15px 0
+=======
+    background-color: $color-primary-light
+    padding: 35px 0
+    font-size: 16px
+>>>>>>> 16185548bb5bd877cc02339808bdacfae82adbac
 
-.hdr-container
+.hdr__container
     display: flex
     justify-content: space-between
     align-items: center
 
-.hdr__logo-container
-    display: flex
-    align-items: center
-
-.hdr__logo-link
-    width: 100px
-    height: 100px
-
-.hdr__logo-img
-    width: 100%
-    height: auto
-
-.hdr__logo-desc
+.hdr__desc
+    max-width: 300px
+    color: $color-secondary-light
     font-family: $font-title
+
+.hdr__menu-link
+    color: $color-primary-dark
     margin-left: 20px
-    max-width: 270px
+    position: relative
+    &:before
+        content: ''
+        position: absolute
+        width: 0px
+        height: 2px
+        bottom: -2px
+        left: 50%
+        background-color: $color-secondary-dark
+        transition: width .25s, left .25s
+    &:hover:before
+        width: 100%
+        left: 1px
 
-.hdr__contacts-items
-    margin-bottom: 10px
-
-.hdr__soc-items
-    display: flex
-    justify-content: flex-end
-
-.hdr__contact-item 
-    a
-        font-family: $font-title
-        color: $color-primary-dark
-        transition: color .3s
-    &:hover
-        a
-            color: $color-secondary-dark
-            transition: color .3s
-        .hdr__contact-icon
-            fill: $color-secondary-dark
-            transition: fill .3s
-
-.hdr__contact
-    display: flex
-    align-items: center
-
-.hdr__contact-icon
-    width: 14px
-    height: 14px
-    margin-right: 5px
-    fill: $color-primary-dark
-    transition: fill .3s
-
-a.hdr__soc
-    background: $color-primary-light
-    width: 30px
-    height: 30px
-    display: flex
-    justify-content: center
-    align-items: center
-    margin-left: 10px
-    border-radius: 50%
-    transition: background .3s !important
-    &:hover
-        background: $color-secondary-dark
-
-.hdr__soc-icon
-    width: 14px
-    height: 14px
-    fill: $color-secondary-light
