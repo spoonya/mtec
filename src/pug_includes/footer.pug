@@ -4,9 +4,11 @@ footer.footer
         p.ftr__address Адрес: 222310 Минская обл., г. Молодечно, пл. Центральная, 1
         ul.ftr__soc-container
             li
-                a(href="#"): svg.ftr__soc-icon: use(xlink:href="#icon-vk")
-                a(href="#"): svg.ftr__soc-icon: use(xlink:href="#icon-twitter")
-                a(href="#"): svg.ftr__soc-icon: use(xlink:href="#icon-youtube")
+                a(href="#").ftr__soc-link: svg.ftr__soc-icon: use(xlink:href="#icon-vk")
+            li
+                a(href="#").ftr__soc-link: svg.ftr__soc-icon: use(xlink:href="#icon-twitter")
+            li
+                a(href="#").ftr__soc-link: svg.ftr__soc-icon: use(xlink:href="#icon-youtube")
     p.frt__copyright © 2011 www.mtec.by
     script(type="text/javascript" src="js/script.js")
     script(type="text/javascript" src="js/owl.carousel.min.js")
