@@ -22,7 +22,7 @@ section.news
                 a.news__item-link(href="#")
                 img.news__item-img(src="img/index/ponasenkov.jpg")
                 .news__item-content
-                    p.news__item-txt Новость
+                    p.news__item-txt Приглашаем всех желающих принять участие в проводимых мероприятиях!
                     .news__item-info
                         p.news__item-date 30.05.2020
                         .news__item-views-wrap
@@ -82,7 +82,7 @@ section.news
                 a.news__item-link(href="#")
                 img.news__item-img(src="img/index/ponasenkov.jpg")
                 .news__item-content
-                    p.news__item-txt Новость
+                    p.news__item-txt Приглашаем всех желающих принять участие в проводимых мероприятиях!
                     .news__item-info
                         p.news__item-date 22.05.2020
                         .news__item-views-wrap
@@ -94,7 +94,7 @@ section.news
                 a.news__item-link(href="#")
                 img.news__item-img(src="img/index/goblin.jpg")
                 .news__item-content
-                    p.news__item-txt Новость
+                    p.news__item-txt Последний раунд онлайн тура деловой игры «Моделирование управления предприятием»
                     .news__item-info
                         p.news__item-date 22.05.2020
                         .news__item-views-wrap
@@ -116,18 +116,23 @@ section.news
                             
         a.news__archive-link(href="#") Архив новостей
 
-
 //- Spec
 section.spec
     .container
         h2.spec__title Наши специальности 
         .spec__inner
             .spec__item
-                a.spec__item-link(href="#")
                 .spec__item-wrap
-                    svg.spec__item-icon 
-                        use(xlink:href="#law")
-                    h3.spec__item-title Правоведение               
+                    .spec__item-front
+                        svg.spec__item-icon 
+                            use(xlink:href="#law")
+                        h3.spec__item-title Правоведение 
+                    .spec__item-back
+                        p.spec__item-txt <span>Форма обучения:</span> дневная, платная.
+                        p.spec__item-txt <span>Срок обучения:</span> 2 г. 10 мес. (9 классов), 1 г. 10 мес. (11 классов)
+                        p.spec__item-txt <span>Квалификация:</span> операционный логист
+                        a.spec__item-link(href="#")
+
             .spec__item
                 a.spec__item-link(href="#")
                 .spec__item-wrap
@@ -148,35 +153,38 @@ section.spec
                     h3.spec__item-title Программное обеспечение информационных технологий
             //- iframe(width='560', height='315', src='https://www.youtube.com/embed/LSUEBq0XxXw', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
 
-//- Res
-//- section.res
-//-     .container
-//-         h2.res__title Внешние ресурсы
-//-         .res__inner
-//-             .owl.owl-theme
-//-                 .item
-//-                     h4 1
-//-                 .item
-//-                     h4 2
-//-                 .item
-//-                     h4 3
-//-                 .item
-//-                     h4 4
-//-                 .item
-//-                     h4 5
-//-                 .item
-//-                     h4 6
-//-                 .item
-//-                     h4 7
-//-                 .item
-//-                     h4 8
-//-                 .item
-//-                     h4 9
-//-                 .item
-//-                     h4 10
-//-                 .item
-//-                     h4 11
-//-                 .item
-//-                     h4 12
-//- </div>
+//- Resources
+section.res
+    .container
+        h2.res__title Внешние ресурсы
+        .res__inner
+            .owl-carousel.owl-theme#owl1
+                .item                
+                    img.res__item-img(src="img/index/r1.png", alt="МЧС РБ")
+                    h4.res__item-title МЧС Республики Беларусь
+                    a.res__item-link(href="https://mchs.gov.by", target="_blank")
+                .item                
+                    img.res__item-img(src="img/index/r2.png", alt="Белкоопсоюз")
+                    h4.res__item-title Белкоопсоюз
+                    a.res__item-link(href="https://bks.gov.by", target="_blank")
+                .item                
+                    img.res__item-img(src="img/index/r3.jpg", alt="Каталог абитуриента")
+                    h4.res__item-title Справочный ресурс для поступающих
+                    a.res__item-link(href="http://www.abiturient.by", target="_blank")
+                .item                
+                    img.res__item-img(src="img/index/r4.png", alt="Сайт Президента Республики Беларусь")
+                    h4.res__item-title Сайт Президента Республики Беларусь
+                    a.res__item-link(href="http://president.gov.by", target="_blank")
+                .item                
+                    img.res__item-img(src="img/index/r5.jpg", alt="Выборы 2020")
+                    h4.res__item-title Выборы президента 2020
+                    a.res__item-link(href="http://molodechno.minsk-region.by/vybory-2020", target="_blank")
+                .item                
+                    img.res__item-img(src="img/index/r6.png", alt="Сайт Республики Беларусь")
+                    h4.res__item-title Сайт Республики Беларусь
+                    a.res__item-link(href="https://belarus.by", target="_blank")
+
+                .owl-nav
+                    svg.news-icon 
+                        use(xlink:href="#arrow")
 include pug_includes/footer.pug
