@@ -14,8 +14,9 @@ html(lang="ru")
 		//- Hdr
 		header.hdr
 			.hdr__container.container
-				img.hdr__logo(src="img/logo.png", alt="Лого")
-				p.hdr__desc &laquo;УО МОЛОДЕЧНЕНСКИЙ ТОРГОВО-ЭКОНОМИЧЕСКИЙ КОЛЛЕДЖ БЕЛКООПСОЮЗА&raquo;
+				a(href="index.html").hdr__logo-container
+					img.hdr__logo(src="img/logo.png", alt="Лого")
+					p.hdr__desc &laquo;УО МОЛОДЕЧНЕНСКИЙ ТОРГОВО-ЭКОНОМИЧЕСКИЙ КОЛЛЕДЖ БЕЛКООПСОЮЗА&raquo;
 				nav
 					ul.hdr__menu
 						li
@@ -25,5 +26,5 @@ html(lang="ru")
 							a.hdr__menu-link(href="#") Специальности
 							a.hdr__menu-link(href="#") Учащимся
 							a.hdr__menu-link(href="#") Галерея
-							a.hdr__menu-link(href="#") Связь
+							a.hdr__menu-link(href="contacts.html") Связь
 

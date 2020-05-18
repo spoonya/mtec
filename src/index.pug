@@ -1,7 +1,7 @@
 include pug_includes/header.pug
 
 //- Intro
-section.intro(style='background-image: url(img/index/bg.jpg)')
+section.intro(style='background-image: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 17.16%), linear-gradient(180deg, rgba(0, 0, 0, 0) 47.94%, #000000 100%), url(img/index/bg.jpg)')
     .container
         .intro__inner
             h1.intro__title Мтэк
@@ -129,28 +129,45 @@ section.spec
                             use(xlink:href="#law")
                         h3.spec__item-title Правоведение                       
                     .spec__item-back
-                        p.spec__item-txt <span>Форма обучения:</span> дневная, платная.
-                        p.spec__item-txt <span>Срок обучения:</span> 2 г. 10 м. (9 классов), 1 г. 10 м. (11 классов)
-                        p.spec__item-txt <span>Квалификация:</span> операционный логист                       
+                        p.spec__item-txt <span>Форма обучения:</span> дневная, заочная, платная.
+                        p.spec__item-txt <span>Срок обучения:</span> 2 г. 10 м. (9 классов), 1 г. 10 м. - дневная, 2 г. 7 м. - заочная (11 классов)
+                        p.spec__item-txt <span>Квалификация:</span> юрист                       
 
             .spec__item
-                a.spec__item-link(href="#")
                 .spec__item-wrap
-                    svg.spec__item-icon 
-                        use(xlink:href="#logistics")
-                    h3.spec__item-title Операционная деятельность в логистике
+                    a.spec__item-link(href="#") 
+                    .spec__item-front
+                        svg.spec__item-icon 
+                            use(xlink:href="#logistics")
+                        h3.spec__item-title Операционная деятельность в логистике                       
+                    .spec__item-back
+                        p.spec__item-txt <span>Форма обучения:</span> дневная, платная.
+                        p.spec__item-txt <span>Срок обучения:</span> 2 г. 10 м. (9 классов), 1 г. 10 м. (11 классов)
+                        p.spec__item-txt <span>Квалификация:</span> операционный логист                    
+
             .spec__item
-                a.spec__item-link(href="#")
                 .spec__item-wrap
-                    svg.spec__item-icon 
-                        use(xlink:href="#accounting")
-                    h3.spec__item-title Бухгалтерский учёт, анализ и контроль          
+                    a.spec__item-link(href="#") 
+                    .spec__item-front
+                        svg.spec__item-icon 
+                            use(xlink:href="#accounting")
+                        h3.spec__item-title Бухгалтерский учёт, анализ и контроль                                 
+                    .spec__item-back
+                        p.spec__item-txt <span>Форма обучения:</span> дневная, заочная, платная.
+                        p.spec__item-txt <span>Срок обучения:</span> 2 г. 10 м. (9 классов), 1 г. 10 м. - дневная, 2 г. 8 м. - заочная (11 классов)
+                        p.spec__item-txt <span>Квалификация:</span> бухгалтер                  
+            
             .spec__item
-                a.spec__item-link(href="#")
                 .spec__item-wrap
-                    svg.spec__item-icon 
-                        use(xlink:href="#code")
-                    h3.spec__item-title Программное обеспечение информационных технологий
+                    a.spec__item-link(href="#") 
+                    .spec__item-front
+                        svg.spec__item-icon 
+                            use(xlink:href="#code")
+                        h3.spec__item-title Программное обеспечение информационных технологий                                 
+                    .spec__item-back
+                        p.spec__item-txt <span>Форма обучения:</span> дневная, платная.
+                        p.spec__item-txt <span>Срок обучения:</span> 3 г. 10 м. (9 классов), 2 г. 10 м. (11 классов)
+                        p.spec__item-txt <span>Квалификация:</span> техник-программист   
             //- iframe(width='560', height='315', src='https://www.youtube.com/embed/LSUEBq0XxXw', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
 
 //- Resources
@@ -184,7 +201,4 @@ section.res
                     h4.res__item-title Сайт Республики Беларусь
                     a.res__item-link(href="https://belarus.by", target="_blank")
 
-                .owl-nav
-                    svg.news-icon 
-                        use(xlink:href="#arrow")
 include pug_includes/footer.pug

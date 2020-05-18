@@ -7,11 +7,17 @@
     justify-content: space-between
     align-items: center
 
+.hdr__logo-container
+    display: flex
+    align-items: center
+    justify-content: flex-start
+
 .hdr__logo
     max-width: 100px
+    margin-right: 20px
 
 .hdr__desc
-    max-width: 300px
+    max-width: 270px
     color: $color-primary-light
     font-family: $font-title
 
@@ -27,7 +33,7 @@
         bottom: -2px
         left: 50%
         background-color: $color-secondary-dark
-        transition: width .25s, left .25s
+        transition: width .2s, left .2s
     &:hover:before
         width: 100%
         left: 1px
