@@ -18,7 +18,7 @@ function styles() {
 		.pipe(sass({
 			outputStyle: 'compressed'
 		}).on('error', sass.logError))
-		//Конкатанация файлов
+		//Конкатенация файлов
 		.pipe(concat('style.css'))
 		//Добавление префиксов
 		.pipe(autoprefixer({
