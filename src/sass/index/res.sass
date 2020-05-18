@@ -1,11 +1,18 @@
 .res
     padding: 0 0 70px
-   
+
 .res__title
     @include title
 
 .owl-nav
-    font-size: 40px
+    margin: 0 -15px
+    span
+        transition: color .25s
+        padding: 0 15px
+        font-size: 50px
+        color: $color-tertiary-dark
+    span:hover
+        color: $color-secondary-dark
 
 .item
     position: relative
