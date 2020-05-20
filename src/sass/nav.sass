@@ -1,6 +1,4 @@
 .nav
-    height: 60vh
-
     position: relative
 
     background-repeat: no-repeat
@@ -32,13 +30,27 @@
     text-align: center
     font-weight: 600
 
+    margin-bottom: 100px
+
 .nav__items
     display: flex
     align-items: center
     justify-content: center
 
 .nav__link
-    color: $color-secondary-light
+    color: #c0bebe
     text-transform: uppercase
     font-family: $font-title
     font-size: 18px
+
+    transition: color .1s linear
+
+.nav__link:not(:last-child)::after
+    content: '/'
+    margin: 0 5px
+
+.nav__link:hover
+    color: $color-secondary-light
+
+.nav__link--active
+    color: $color-secondary-light

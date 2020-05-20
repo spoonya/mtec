@@ -1,0 +1,83 @@
+.history
+    padding: 50px 0
+
+.history__timeline
+    position: relative
+    width: 1000px
+    margin: 0 auto
+    width: 100%
+    padding: 50px 0
+
+.history__timeline::before
+    display: block
+    content: ''
+    position: absolute
+    left: 50%
+    top: 0
+    width: 2px
+    height: 100%
+    background: $color-tertiary-dark
+
+.history__timeline ul li
+    width: 50%
+    padding: 20px 40px
+    position: relative
+    margin-bottom: 30px
+
+.history__timeline ul li:nth-child(odd)
+    text-align: right
+
+.history__timeline ul li:nth-child(even)
+    text-align: left
+    margin-left: 50%
+
+.history__timeline ul li:nth-child(odd)::before
+    display: block
+    content: ''
+    position: absolute
+    top: 24px
+    right: -8px
+    width: 15px
+    height: 15px
+    border-radius: 50%
+    background: $color-secondary-dark 
+    box-shadow: 0 0 0 3px #ffa04880
+
+.history__timeline ul li:nth-child(even)::before
+    display: block
+    content: ''
+    position: absolute
+    top: 24px
+    left: -7px
+    width: 15px
+    height: 15px
+    border-radius: 50%
+    background: $color-secondary-dark 
+    box-shadow: 0 0 0 3px #ffa04880
+
+.history__timeline-content
+    font-family: $font-title
+
+
+.history__timeline ul li:nth-child(odd) .history__timeline-time   
+    position: absolute
+    top: 10px
+    right: -22%
+
+.history__timeline ul li:nth-child(even) .history__timeline-time   
+    position: absolute
+    top: 10px
+    left: -22%
+
+.history__timeline-time h4
+    display: inline-block
+
+    padding: 10px 15px
+
+    font-weight: 600
+    font-family: $font-title
+
+    background: $color-secondary-dark
+    border-radius: 5px
+
+    box-shadow: 0 0 0 3px #ffa04880
