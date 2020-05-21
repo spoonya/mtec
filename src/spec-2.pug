@@ -1,0 +1,25 @@
+include pug_includes/header.pug
+
+//- Nav
+section.nav(style='background-image: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 17.16%), linear-gradient(180deg, rgba(0, 0, 0, 0) 47.94%, #000000 100%), url(img/spec/s2.jpg)')
+    .nav__inner
+        h2.nav__title Операционная деятельнось в логистике
+        nav.nav__items
+            a.nav__link(href="index.html") Главная
+            a.nav__link.nav__link--active(href="index.html#spec") Специальности
+            a.nav__link.nav__link--active(href="spec-2.html") Логистика
+
+.specs
+    .container
+        .specs__inner
+            p.specs__info <span>Специальность:</span> 2-26 02 32 «Операционная деятельность в логистике».
+            p.specs__info <span>Форма обучения:</span> дневная, платная.
+            p.specs__info <span>Квалификация:</span> операционный логист (дополнительно кладовщик, комплектовщик, агент по обслуживанию автомобильных перевозок).
+            .specs__info <span>Сроки обучения:</span>
+                p.specs__info-item на основе общего базового образования – 2 года 10 месяцев;
+                p.specs__info-item на основе общего среднего образования – 1 год 10 месяцев.
+            .specs__info <span>Вступительные испытания:</span>
+                p.specs__info-item на основе общего базового образования – конкурс среднего балла документа об образовании;
+                p.specs__info-item на основе общего среднего образования – результаты ЦТ (русский или белорусский язык, математика) и средний балл документа об образовании.
+            .specs__info <span>План приёма:</span> 50.
+include pug_includes/footer.pug
