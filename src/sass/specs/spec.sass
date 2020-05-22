@@ -1,11 +1,54 @@
 .specs
     padding: 50px 0
 
-.specs__inner span
-    font-weight: 600
+.specs__info-code
+    font-weight: 700
+    margin-bottom: 30px
+    font-family: $font-title
+    font-size: 20px
+    text-align: center
+    
+.specs__inner
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
 
-.specs__info
+.specs__inner span
+    font-weight: 700
+
+.specs__info:not(:last-child)
     margin-bottom: 20px
 
 .specs__info-item
     margin-left: 30px
+
+.specs__item
+    display: flex
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2)
+    max-width: 800px
+    width: 100%
+    margin-bottom: 40px
+
+.specs__item:nth-child(even)
+    flex-direction: row-reverse
+
+.specs__item-title
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    font-size: 40px
+    font-family: $font-title
+    font-weight: 600
+    color: $color-secondary-light
+    background-color: $color-secondary-dark
+    padding: 15px
+
+.specs__content
+    padding: 15px
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
