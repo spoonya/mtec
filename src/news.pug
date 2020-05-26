@@ -1,0 +1,59 @@
+include pug_includes/header.pug
+
+//- Nav
+section.nav(style='background-image: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 17.16%), linear-gradient(180deg, rgba(0, 0, 0, 0) 47.94%, #000000 100%), url(img/nav-bg.jpg)')
+    .nav__inner
+        h2.nav__title Новости
+        nav.nav__items
+            a.nav__link(href="index.html") Главная
+            a.nav__link.nav__link--active(href="history.html") Новости   
+
+//- News
+//- .news-p.container
+//-     .news-p__inner
+//-         .news-p__item
+//-             a.news-p__item-link(href='#')
+//-             img.news-p__item-img(src='img/index/goblin.jpg')
+//-             .news-p__item-content
+//-                 p.news-p__item-txt Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi itaque fuga non omnis. Corporis impedit veniam, quia amet, itaque ea, eveniet officiis enim repellendus ullam repudiandae maxime quis magnam velit?
+//-                 .news-p__item-info
+//-                     p.news-p__item-date 29.05.2020
+//-                     .news-p__item-views-wrap
+//-                         svg.news-icon 
+//-                             use(xlink:href='#views')
+//-                         p.news-p__item-views 112
+
+//- News
+.news-p.container
+    .news-p__inner
+        .news-p__item
+            .news-p__item-img-wrap
+                a.news-p__item-img-link(href='#')
+                .news-p__item-img-hover
+                img.news-p__item-img(src='img/index/goblin.jpg')               
+            .news-p__content
+                a.news-p__title-link(href='#') Современные методики изучения и преподавания иностранных языков
+                p.news-p__txt 7 мая 2020 года учреждение образования «Молодечненский торгово-экономический колледж» Белкоопсоюза приняло Участие в онлайн семинаре «Современные методики изучения и преподавания иностранных языков»
+                .news-p__item-info
+                    p.news-p__item-date 29.05.2020
+                    .news-p__item-views-wrap
+                        svg.news-icon 
+                            use(xlink:href='#views')
+                        p.news-p__item-views 112
+
+        .news-p__item
+            .news-p__item-img-wrap
+                a.news-p__item-img-link(href='#')
+                .news-p__item-img-hover
+                img.news-p__item-img(src='img/index/ponasenkov.jpg')               
+            .news-p__content
+                a.news-p__title-link(href='#') Земля – наш общий дом
+                p.news-p__txt 27 марта 2020 года на базе филиала «Молодечненский государственный политехнический колледж» учреждения образования «Республиканский институт  профессионального образования» прошла научно-практическая конференция “Земля – наш общий дом”. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae tenetur quas velit at, esse rem debitis dolorum eaque, aspernatur fuga maiores quidem corrupti? Aliquam pariatur harum at, deserunt consequatur asperiores? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, non itaque hic reprehenderit voluptatem perspiciatis beatae nulla sequi, quam veritatis sed porro! Deleniti quis commodi, temporibus eaque cupiditate asperiores nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quia temporibus. Assumenda aut eum laboriosam maiores deleniti cum repellendus laudantium, perferendis, voluptates earum quibusdam ipsa quam? Qui veritatis neque doloribus!
+                .news-p__item-info
+                    p.news-p__item-date 28.05.2020
+                    .news-p__item-views-wrap
+                        svg.news-icon 
+                            use(xlink:href='#views')
+                        p.news-p__item-views 250
+
+include pug_includes/footer.pug
