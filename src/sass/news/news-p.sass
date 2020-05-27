@@ -49,7 +49,6 @@
     height: 100%
     transition: all .3s ease-in-out
     opacity: 0
-    background-color: #2d3436;
     background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%)
 
 .news-p__item-img-link:hover ~ .news-p__item-img-hover
@@ -98,3 +97,39 @@
 .news-p__item-views-wrap
     display: flex
     align-items: center
+
+.pag
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 10px 15px
+    margin-top: 20px
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2)
+    border-radius: 50px
+
+a.pag__num
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 0 10px
+    color: $color-primary-dark
+    font-size: 18px
+    border-radius: 50%
+    width: 40px
+    height: 40px
+    transition: all .1s linear
+
+a.pag__num:hover, a.pag__num.active
+    background-color: $color-primary-dark
+    color: $color-secondary-light
+
+.pag__prev, .pag__next
+    font-weight: 500
+    font-size: 25px
+    color: $color-primary-light
+
+.pag__prev
+    margin-right: 20px
+
+.pag__next
+    margin-left: 20px
