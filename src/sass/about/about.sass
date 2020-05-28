@@ -36,3 +36,51 @@
     transition: transform .2s
     &:hover
         transform: scale(1.07)
+
+.fotorama__arr,
+.fotorama__fullscreen-icon,
+.fotorama--fullscreen .fotorama__fullscreen-icon
+    background-position: center center
+    background-size: contain
+    background-repeat: no-repeat
+    opacity: .7
+    &:hover
+        opacity: 1
+
+.fotorama__arr--disabled
+    opacity: 0.2
+
+.fotorama--fullscreen .fotorama__fullscreen-icon
+    right: 15px
+    top: 15px
+    width: 30px
+    height: 30px
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0'?%3e%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='Capa_1' x='0px' y='0px' viewBox='0 0 502.56 502.56' style='enable-background:new 0 0 502.56 502.56;' xml:space='preserve' width='512px' height='512px'%3e%3cg%3e%3cg%3e%3cg%3e%3cg%3e%3cpath d='M171.36,148.8L22.72,0L0,22.72l148.8,148.64H75.36v32h112c8.837,0,16-7.163,16-16v-112h-32V148.8z' data-original='%23000000' class='active-path' data-old_color='%23000000' fill='%23fff'/%3e%3cpath d='M315.36,203.36h112v-32h-73.44L502.56,22.72L480,0L331.36,148.8V75.36h-32v112 C299.36,196.197,306.523,203.36,315.36,203.36z' data-original='%23000000' class='active-path' data-old_color='%23000000' fill='%23fff'/%3e%3cpath d='M427.36,331.36v-32h-112c-8.837,0-16,7.163-16,16v112h32v-73.44L480,502.56L502.56,480L353.92,331.36H427.36z' data-original='%23000000' class='active-path' data-old_color='%23000000' fill='%23fff'/%3e%3cpath d='M187.36,299.36h-112v32h73.44L0,480l22.56,22.56l148.8-148.64v73.44h32v-112 C203.36,306.523,196.197,299.36,187.36,299.36z' data-original='%23000000' class='active-path' data-old_color='%23000000' fill='%23fff'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e")
+
+.fotorama__fullscreen-icon
+    right: 15px
+    top: 15px
+    width: 30px
+    height: 30px
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0'?%3e%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='Capa_1' x='0px' y='0px' viewBox='0 0 512 512' style='enable-background:new 0 0 512 512;' xml:space='preserve' width='512px' height='512px'%3e%3cg%3e%3cg%3e%3cg%3e%3cg%3e%3cpath d='M128,32V0H16C7.163,0,0,7.163,0,16v112h32V54.56L180.64,203.2l22.56-22.56L54.56,32H128z' data-original='%23000000' class='active-path' data-old_color='%23000000' fill='%23fff'/%3e%3cpath d='M496,0H384v32h73.44L308.8,180.64l22.56,22.56L480,54.56V128h32V16C512,7.163,504.837,0,496,0z' data-original='%23000000' class='active-path' data-old_color='%23000000' fill='%23fff'/%3e%3cpath d='M480,457.44L331.36,308.8l-22.56,22.56L457.44,480H384v32h112c8.837,0,16-7.163,16-16V384h-32V457.44z' data-original='%23000000' class='active-path' data-old_color='%23000000' fill='%23fff'/%3e%3cpath d='M180.64,308.64L32,457.44V384H0v112c0,8.837,7.163,16,16,16h112v-32H54.56L203.2,331.36L180.64,308.64z' data-original='%23000000' class='active-path' data-old_color='%23000000' fill='%23fff'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e")
+
+.fotorama__arr
+    width: 30px
+    height: 30px
+    top: 50%
+    margin-top: -15px
+
+.fotorama__arr--prev
+    left: 15px
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0'?%3e%3csvg xmlns='http://www.w3.org/2000/svg' id='Capa_1' enable-background='new 0 0 551.13 551.13' height='512px' viewBox='0 0 551.13 551.13' width='512px'%3e%3cg%3e%3cpath d='m189.451 275.565 223.897-223.897v-51.668l-275.565 275.565 275.565 275.565v-51.668z' data-original='%23000000' class='active-path' data-old_color='%23000000' fill='%23fff'/%3e%3c/g%3e%3c/svg%3e")
+
+.fotorama__arr--next
+    right: 15px
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0'?%3e%3csvg xmlns='http://www.w3.org/2000/svg' id='Capa_1' enable-background='new 0 0 551.13 551.13' height='512px' viewBox='0 0 551.13 551.13' width='512px'%3e%3cg%3e%3cpath d='m361.679 275.565-223.896 223.897v51.668l275.565-275.565-275.565-275.565v51.668z' data-original='%23000000' class='active-path' data-old_color='%23000000' fill='%23fff'/%3e%3c/g%3e%3c/svg%3e")
+
+.fotorama__thumb-border
+    border: none
+    background: none
+
+.fotorama__nav__frame:not(.fotorama__active)
+    opacity: .5
