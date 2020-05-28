@@ -1,1 +1,0 @@
-# mtec-preview
