@@ -1,5 +1,5 @@
 .about
-    padding: 50px 0
+    padding: 60px 0
 
 .about__title
     @include title
@@ -8,12 +8,38 @@
     margin-bottom: 20px
 
 .about__text + .about__title
-    margin-top: 40px
+    margin-top: 60px
 
 .mission__img
-    width: 800px
+    width: 500px
     max-width: 100%
+    margin: 0 auto 60px
 
-.about__img
+.smi__container
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    margin: -30px -30px 0
+
+.smi__item
+    position: relative
+    margin-bottom: 30px
+    width: 20%
+    transition: transform .2s
+    &:hover
+        transform: scale(1.05)
+    
+.smi__link
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 5
+
+.smi__img
+    width: auto
     max-width: 100%
-    margin: 0 auto 40px
+    max-height: 200px
+    
