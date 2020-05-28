@@ -26,4 +26,7 @@ jQuery(function ($) {
         $('.pag').find('pag__num.active').prev().addClass('active');
         $('.pag').find('pag__num.active').next().removeClass('active');
     });
+
+    //Fotorama
+    $('.fotorama').fotorama({shadows: false, nav: 'thumbs', fit: 'cover', thumbwidth: 100, thumbheight: 70, loop: true, arrows: 'always', width: '100%', maxwidth: '100%', maxheight: '800px', allowfullscreen: true});
 });
