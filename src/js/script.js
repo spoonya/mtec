@@ -28,5 +28,5 @@ jQuery(function ($) {
     });
 
     //Fotorama
-    $('.fotorama').fotorama({shadows: false, nav: 'thumbs', fit: 'cover', thumbwidth: 100, thumbheight: 70, loop: true, arrows: 'always', width: '100%', maxwidth: '100%', maxheight: '800px', allowfullscreen: true});
+    jQuery(function($){var fotorama = $('.fotorama').fotorama({shadows: false, nav: 'thumbs', fit: 'cover', thumbwidth: 100, thumbheight: 70, loop: false, arrows: 'always', width: '100%', maxwidth: '100%', ratio: 16/10, allowfullscreen: 'native'}).data('fotorama'); $('.fotorama').on('fotorama:fullscreenenter', function (e, fotorama) {fotorama.setOptions({fit: 'contain'});});$('.fotorama').on('fotorama:fullscreenexit', function (e, fotorama) {fotorama.setOptions({fit: 'cover'});});})
 });
