@@ -1,0 +1,47 @@
+.sched
+    padding: 70px 0 35px
+
+.sched__title
+    @include title
+
+.sched__inner
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+
+// .sched__list
+//     @include list
+
+.sched__item
+    position: relative
+    text-align: center
+    width: 50%
+    margin-bottom: 30px
+    padding: 0 150px
+    margin-bottom: 50px
+
+.sched__item-wrap
+    padding: 10px
+    transition: box-shadow .15s linear
+    min-height: 200px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+.sched__item-icon
+    fill: $color-primary-light
+    width: 80px
+    height: 80px
+    margin-bottom: 15px
+
+.sched__item-link
+    width: 50%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+
+.sched__item-link:hover ~ .sched__item-wrap
+    box-shadow: 0 0 20px rgba(0, 0, 0, .15)

@@ -6,7 +6,28 @@ section.nav(style='background-image: linear-gradient(180deg, #000000 0%, rgba(0,
         h2.nav__title Учащимся
         nav.nav__items
             a.nav__link(href="index.html") Главная
-            a.nav__link.nav__link--active(href="spec-4.html") Учащимся
+            a.nav__link.nav__link--active(href="students.html") Учащимся
+
+//- Schedule
+section.sched.container
+    h2.sched__title Скорректированное Расписание
+    //- ul.abs__list
+    //-     li.abs__list-item: a(href="#") Расписание для 1-4 курсов в разрезе групп(pdf)
+    //-     li.abs__list-item: a(href="#") Расписание для 1-4 курсов в разрезе преподавателей (pdf)
+    .sched__inner
+        .sched__item
+            a.sched__item-link(href="#")
+            .sched__item-wrap
+                svg.sched__item-icon 
+                    use(xlink:href="#student")
+                h3.sched__item-title Расписание для 1-4 курсов в разрезе групп
+
+        .sched__item
+            a.sched__item-link(href="#")
+            .sched__item-wrap
+                svg.sched__item-icon 
+                    use(xlink:href="#teacher")
+                h3.sched__item-title Расписание для 1-4 курсов в разрезе преподавателей
 
 //- Abs
 section.abs.container
@@ -47,7 +68,6 @@ section.day.container
             a.day__txt-item-link(href="#") (скачать)
         p.day__txt-item График проведения консультаций по субботам по технологической практике (специальности: Бухгалтерский учёт, анализ и контроль; Коммерческая деятельность (по направлениям)) для учащихся 3-го курса дневного отделения
             a.day__txt-item-link(href="#") (скачать)
-    img.day__img(src="img/students/s6.jpg", alt="Расписание")
-
+    img.day__img(src="img/students/s6.jpg", alt="График проведения консультаций")
 
 include pug_includes/footer.pug
