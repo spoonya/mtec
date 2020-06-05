@@ -17,14 +17,25 @@
 
 @mixin list-item
     font-size: 16px
-
     &:not(:last-child)
         margin-bottom: 15px
-        
     a
         color: $color-primary-light
         &:hover
             text-decoration: underline
+
+@mixin icon
+    fill: $color-tertiary-dark
+    height: 20px
+    width: 20px
+    margin-right: 5px
+    height: 15px
+    width: 15px
+
+@mixin default-link
+    color: $color-primary-light
+    &:hover
+        text-decoration: underline
 
 @mixin btn
     color: $color-primary-dark
