@@ -6,6 +6,23 @@
     text-transform: uppercase
     margin-bottom: 60px
 
+@mixin subtitle
+    font-size: 16px
+    font-weight: 700
+    margin-bottom: 20px
+
+@mixin list
+    &:not(:last-child)
+        margin-bottom: 30px
+
+@mixin list-item
+    font-size: 16px
+    margin-bottom: 15px
+    a
+        color: $color-primary-light
+        &:hover
+            text-decoration: underline
+
 @mixin btn
     color: $color-primary-dark
     font-family: $font-title
@@ -14,6 +31,7 @@
     border: 1px $color-secondary-dark solid
     border-radius: 100px
     background-color: $color-secondary-dark
+
     &:hover
         transition: background-color .1s linear, color .1s linear
         background-color: darken($color-secondary-dark, 7)
