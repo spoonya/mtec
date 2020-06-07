@@ -21,6 +21,17 @@
     color: $color-primary-light
     font-family: $font-title
     font-weight: 600
+    text-transform: uppercase
+
+.hdr__menu
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.hdr__menu > li
+    position: relative
+    display: flex
+    justify-content: center
 
 .hdr__menu-link
     color: $color-primary-dark
@@ -37,5 +48,89 @@
         transition: width .2s, left .2s
     &:hover:before
         width: 100%
-        left: 0px
+        left: 0
 
+.hdr__menu-arrow
+    position: absolute
+    display: block
+    z-index: 1000
+    content: ''
+    width: 0
+    height: 0
+    top: 9px
+    left: 100%
+    margin: 0 2px
+    border-left: 5px solid transparent
+    border-right: 5px solid transparent
+    border-top: 7px solid  $color-primary-dark
+
+.hdr__submenu-arrow
+
+
+.arrow
+    display: none
+
+.arrow.active
+    transform: rotate(180deg)
+
+.hdr__submenu
+    border-bottom: 5px solid $color-secondary-dark
+    display: none
+    position: absolute
+
+.hdr__submenu--lvl2
+    transform: translateX(10px)
+    top: 20px
+    padding-top: 15px
+    min-width: 300px
+    width: 100%
+    z-index: 1000
+
+    &::before
+        position: absolute
+        display: block
+        content: ''
+        width: 0
+        height: 0
+        top: 8px
+        left: 50%
+        transform: translateX(-50%)
+        border-left: 5px solid transparent
+        border-right: 5px solid transparent
+        border-bottom: 7px solid  $color-primary-dark
+
+.hdr__submenu--lvl3
+    position: absolute
+    top: 0
+    left: -100%
+    min-width: 100px
+    width: 100%
+
+.hdr__submenu-link
+    position: relative
+    color: $color-secondary-light
+    padding: 8px 15px
+    transition: .1s linear
+
+.hdr__submenu-link:hover
+    transform: translateX(5px)
+    color: darken($color-secondary-light, 10)
+
+.hdr__submenu--lvl2 > li, .hdr__submenu--lvl3 > li
+    position: relative
+
+.hdr__submenu--lvl2 > li
+    background-color: $color-primary-dark
+
+.hdr__submenu--lvl3 > li
+    background-color: lighten($color-primary-dark, 5)
+
+body.mouse .hdr__menu > li:hover .hdr__submenu.hdr__submenu--lvl2,
+body.mouse .hdr__submenu > li:hover .hdr__submenu.hdr__submenu--lvl3
+    display: block
+
+body.touch .hdr__submenu.open
+    display: block
+
+body.touch .arrow
+    display: block
