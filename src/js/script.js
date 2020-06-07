@@ -27,7 +27,11 @@ jQuery(function ($) {
         $('.pag').find('pag__num.active').next().removeClass('active');
     });
 
+<<<<<<< HEAD
     // Fotorama
+=======
+    //Fotorama
+>>>>>>> 830684c53e2363b1c839fa3ba18313c2a88cd073
     var fotorama = $('.fotorama').fotorama({
         shadows: false,
         nav: 'thumbs',
@@ -52,6 +56,7 @@ jQuery(function ($) {
         });
     });
 
+<<<<<<< HEAD
     //Mobile menu
     var isMobile = {
         Android: function () {
@@ -93,4 +98,21 @@ jQuery(function ($) {
         body.classList.add('mouse');
     }
 
+=======
+    //Menu*
+    $('.menu__burger').click(function(){
+        $('.hdr__menu-wrap').toggleClass('open');
+    });
+
+    var items = $('.hdr__menu-item').has('.sub__menu');
+    items.append('<span class="sub__menu-open"></span>');
+    items.children('.sub__menu').prepend('<li class="hdr__menu-item"><span class="sub__menu-link sub__menu-close">Назад</span></li>');
+    items.children('.sub__menu-open').click(function(){
+        $(this).parent('.hdr__menu-item').children('.sub__menu').addClass('open');
+    });
+
+    $('.sub__menu-close').click(function(){
+        $(this).parent('.hdr__menu-item').parent('.sub__menu').removeClass('open');
+    });
+>>>>>>> 830684c53e2363b1c839fa3ba18313c2a88cd073
 });

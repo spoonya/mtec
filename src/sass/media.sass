@@ -1,0 +1,115 @@
+@import 'includes/vars'
+
+@media(min-width: 1080px)
+    .hdr__menu
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    .hdr__menu-link
+        color: $color-primary-dark
+        margin-left: 20px
+        position: relative
+        &:before
+            content: ''
+            position: absolute
+            width: 0px
+            height: 2px
+            bottom: -2px
+            left: 50%
+            background-color: $color-secondary-dark
+            transition: width .2s, left .2s
+        &:hover:before
+            width: 100%
+            left: 0px
+
+    .hdr__menu-item
+        z-index: 1000
+        position: relative
+        padding: 15px 0
+        cursor: pointer
+
+    .sub__menu
+        position: absolute
+        width: 250px
+        left: 50%
+        bottom: 5px
+        transform: translate(calc(-50% + 10px), 100%)
+        display: none
+        border: 1px solid $color-tertiary-dark
+        .hdr__menu-item
+            border-bottom: 1px solid #ccc
+            padding: 0
+
+    .sub__menu-link
+        padding: 10px 15px
+        color: $color-primary-dark
+        display: block
+        background: #fdfbfb
+        transition: background .2s
+        &:hover
+            background: #ebedee
+
+    .hdr__menu-item:hover>.sub__menu
+        display: block
+
+
+    .sub__menu .hdr__menu-item>.sub__menu
+        bottom: auto
+        top: 0
+        transform: translate(-150%, 0)
+
+    .menu__burger,
+    .sub__menu-open,
+    .sub__menu-close
+        display: none
+
+@media(max-width: 1079px)
+    .menu__burger
+        display: block
+    .hdr__menu
+        display: block
+    .hdr__menu-wrap
+        position: fixed
+        top: 0
+        left: 0
+        height: 100vh
+        width: 300px
+        max-width: 100%
+        z-index: 700
+        background-color: #fff
+        overflow-x: hidden
+        overflow-y: auto
+        transform: translateX(-100%)
+        transition: transform .25s
+        &.open
+            transform: translateX(0%)
+
+    .sub__menu
+        position: fixed
+        z-index: 1100
+        background-color: #fff
+        top: 0
+        left: 0
+        bottom: 0
+        height: 100vh
+        width: 300px
+        transform: translateX(100%)
+        transition: transform .25s
+        &.open
+            transform: translateX(0%)
+
+    .sub__menu-open
+        min-width: 30px
+        min-height: 30px
+        cursor: pointer
+        background-color: #cccccc
+
+    .sub__menu-open
+        cursor: pointer
+
+    .hdr__menu-item
+        display: flex
+        justify-content: space-between
+        align-items: center
+        position: relative
