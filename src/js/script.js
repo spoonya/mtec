@@ -27,11 +27,7 @@ jQuery(function ($) {
         $('.pag').find('pag__num.active').next().removeClass('active');
     });
 
-<<<<<<< HEAD
-    // Fotorama
-=======
     //Fotorama
->>>>>>> 830684c53e2363b1c839fa3ba18313c2a88cd073
     var fotorama = $('.fotorama').fotorama({
         shadows: false,
         nav: 'thumbs',
@@ -56,49 +52,6 @@ jQuery(function ($) {
         });
     });
 
-<<<<<<< HEAD
-    //Mobile menu
-    var isMobile = {
-        Android: function () {
-            return navigator.userAgent.match(/Android/i);
-        },
-        BlackBerry: function () {
-            return navigator.userAgent.match(/BlackBerry/i);
-        },
-        iOS: function () {
-            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-        },
-        Opera: function () {
-            return navigator.userAgent.match(/Opera Mini/i);
-        },
-        Windows: function () {
-            return navigator.userAgent.match(/IEMobile/i);
-        },
-        any: function () {
-            return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-        }
-    };
-
-    var body = document.querySelector('body');
-    if (isMobile.any()) {
-        body.classList.add('touch');
-        var arrow = document.querySelectorAll('.arrow');
-        for (i = 0; i < arrow.length; i++) {
-            var thisLink = arrow[i].previousElementSibling;
-            var subMenu = arrow[i].nextElementSibling;
-            var thisArrow = arrow[i];
-
-            thisLink.classList.add('parent');
-            arrow[i].addEventListener('click', function () {
-                subMenu.classList.toggle('open');
-                thisArrow.classList.toggle('active');
-            });
-        }
-    } else {
-        body.classList.add('mouse');
-    }
-
-=======
     //Menu*
     $('.menu__burger').click(function(){
         $('.hdr__menu-wrap').toggleClass('open');
@@ -114,5 +67,4 @@ jQuery(function ($) {
     $('.sub__menu-close').click(function(){
         $(this).parent('.hdr__menu-item').parent('.sub__menu').removeClass('open');
     });
->>>>>>> 830684c53e2363b1c839fa3ba18313c2a88cd073
 });

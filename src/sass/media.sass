@@ -36,23 +36,41 @@
         bottom: 5px
         transform: translate(calc(-50% + 10px), 100%)
         display: none
-        border: 1px solid $color-tertiary-dark
+        box-shadow: 0 0 20px rgba(0, 0, 0, .4)
+        border-bottom: 5px solid $color-secondary-dark
+        display: none
+        position: absolute
+
         .hdr__menu-item
-            border-bottom: 1px solid #ccc
             padding: 0
+
+    .sub__menu--lvl2
+        &::before
+            position: absolute
+            display: block
+            content: ''
+            width: 0
+            height: 0
+            top: -7px
+            left: 50%
+            transform: translateX(-50%)
+            border-left: 5px solid transparent
+            border-right: 5px solid transparent
+            border-bottom: 7px solid $color-primary-dark
 
     .sub__menu-link
         padding: 10px 15px
-        color: $color-primary-dark
+        color: $color-secondary-light
         display: block
-        background: #fdfbfb
-        transition: background .2s
+        border: 1px solid $color-primary-dark
+        background-color: lighten($color-primary-dark, 5)
+        transition: background .1s, color .1s
         &:hover
             background: #ebedee
+            color: $color-primary-dark
 
     .hdr__menu-item:hover>.sub__menu
         display: block
-
 
     .sub__menu .hdr__menu-item>.sub__menu
         bottom: auto
@@ -82,13 +100,14 @@
         overflow-y: auto
         transform: translateX(-100%)
         transition: transform .25s
+        background-color: $color-primary-dark
         &.open
             transform: translateX(0%)
 
     .sub__menu
         position: fixed
         z-index: 1100
-        background-color: #fff
+        background-color: $color-primary-dark
         top: 0
         left: 0
         bottom: 0
@@ -113,3 +132,6 @@
         justify-content: space-between
         align-items: center
         position: relative
+
+    .hdr__menu-link
+        color: $color-secondary-light
