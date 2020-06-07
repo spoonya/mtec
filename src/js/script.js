@@ -52,14 +52,19 @@ jQuery(function ($) {
         });
     });
 
-    //Menu
-    $(".hdr__menu-item")
-        .mouseenter(function () {
-            var sub = $(this).children('.sub__menu');
-            sub.slideDown(200);
-        })
-        .mouseleave(function () {
-            var sub = $(this).children('.sub__menu')
-            sub.slideUp(200);
-        });
+    //Menu*
+    $('.menu__burger').click(function(){
+        $('.hdr__menu-wrap').toggleClass('open');
+    });
+
+    var items = $('.hdr__menu-item').has('.sub__menu');
+    items.append('<span class="sub__menu-open"></span>');
+    items.children('.sub__menu').prepend('<li class="hdr__menu-item"><span class="sub__menu-link sub__menu-close">Назад</span></li>');
+    items.children('.sub__menu-open').click(function(){
+        $(this).parent('.hdr__menu-item').children('.sub__menu').addClass('open');
+    });
+
+    $('.sub__menu-close').click(function(){
+        $(this).parent('.hdr__menu-item').parent('.sub__menu').removeClass('open');
+    });
 });
