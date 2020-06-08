@@ -54,7 +54,15 @@ jQuery(function ($) {
 
     //Menu
     $('.menu__burger').click(function(){
-        $('.hdr__menu-wrap').toggleClass('open');
+        $('.hdr__menu-wrap').addClass('open');
+        $('.hdr__menu-close').addClass('show');
+        $('.menu__overlay').fadeIn(250);
+    });
+
+    $('.menu__overlay, .hdr__menu-close').click(function(){
+        $('.open').removeClass('open');
+        $('.hdr__menu-close').removeClass('show');
+        $('.menu__overlay').fadeOut(250);
     });
 
     var items = $('.hdr__menu-item').has('.sub__menu');
@@ -66,10 +74,5 @@ jQuery(function ($) {
 
     $('.sub__menu-close').click(function(){
         $(this).parent('.hdr__menu-item').parent('.sub__menu').removeClass('open');
-    });
-
-    //Burger-menu
-    $('.menu__burger').on('click', function(){
-        $(this).toggleClass('menu__burger--active');
     });
 });

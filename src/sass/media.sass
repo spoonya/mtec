@@ -79,7 +79,7 @@
 
     .menu__burger,
     .sub__menu-open,
-    .sub__menu-close
+    .sub__menu-close,
         display: none
 
 @media(max-width: 1079px)
@@ -109,13 +109,13 @@
 
     .sub__menu
         position: fixed
-        z-index: 1100
+        z-index: 800
         background-color: $color-primary-dark
         top: 0
         left: 0
         bottom: 0
         padding: 10px
-        height: 100vh
+        height: 100%
         width: 300px
         transform: translateX(100%)
         transition: transform .25s
@@ -123,67 +123,106 @@
             transform: translateX(0%)
 
     .sub__menu-open
-        min-width: 20px
-        min-height: 20px
+        position: absolute
+        top: 0
+        right: 0
+        min-width: 40px
+        min-height: 40px
+        height: 100%
         cursor: pointer
         background-image: url('../img/next.svg')
+        background-position: right center
+        background-repeat: no-repeat
+        background-size: 20px
 
     .sub__menu-open
         cursor: pointer
 
     .sub__menu-link.sub__menu-close
-        margin-bottom: 20px
         color: $color-secondary-dark
+        padding-left: 30px
+        position: relative
+        &:before
+            position: absolute
+            content: ''
+            display: block
+            top: 0
+            left: 0
+            height: 100%
+            min-width: 20px
+            background-image: url('../img/next.svg')
+            background-position: right center
+            background-repeat: no-repeat
+            background-size: 20px
+            transform: rotate(180deg)
 
     .hdr__menu-item
-        display: flex
-        justify-content: space-between
-        align-items: center
         position: relative
+        border-bottom: 1px solid $color-secondary-dark
 
     .hdr__menu-link, .sub__menu-link
+        display: block
         color: $color-secondary-light
-        margin-bottom: 10px
+        padding: 15px 40px 15px 10px
+        width: 100%
 
     .menu__burger
         position: relative
         display: block
-        padding: 10px 2px
         cursor: pointer
-
-    .menu__burger--active
-        .menu__burger-line
-            height: 0
-
-        .menu__burger-line::after
-            transform: rotate(45deg)
-            top: 0
-
-        .menu__burger-line::before
-            transform: rotate(-45deg)
-            top: 0
-
-    .menu__burger-line
-        position: relative
-        display: block
-        width: 25px
-        height: 2px
-        background-color: $color-secondary-dark
-
-        &::after,
-        &::before
+        width: 30px
+        height: 24px
+        border-top: 2px solid $color-primary-dark
+        border-bottom: 2px solid $color-primary-dark
+        transition: border-color .25s
+        &:before
+            content: ''
             position: absolute
-            left: 0
             display: block
+            background-color: $color-primary-dark
             width: 100%
             height: 2px
+            top: 50%
+            left: 0
+            transform: translateY(-50%)
+            transition: background-color .25s
+        &:hover
+            border-color: $color-secondary-dark
+            &:before
+                background-color: $color-secondary-dark
+
+    .menu__overlay
+        position: fixed
+        top: 0
+        right: 0
+        height: 100%
+        width: 100%
+        z-index: 600
+        background-color: rgba(0, 0, 0, .7)
+        display: none
+
+    .hdr__menu-close
+        position: fixed
+        top: 0
+        left: 300px
+        z-index: 700
+        width: 20px
+        height: 20px
+        transform: translate(-320px)
+        transition: transform .25s
+        cursor: pointer
+        background-color: $color-secondary-dark
+        &:before, &:after
             content: ''
-            transition: transform .2s linear
-            background-color: $color-secondary-dark
-
-        &::after
-            top: -10px
-
-        &::before
-            top: 10px
-
+            display: block
+            position: absolute
+            background-color: $color-primary-dark
+            width: 2px
+            height: 100%
+            top: 0
+            left: 0
+            transform: rotate(45deg) translate(6px, -6px)
+        &:after
+            transform: rotate(-45deg) translate(6px, 6px)
+        &.show
+            transform: translate(0)
