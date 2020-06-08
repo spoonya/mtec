@@ -52,7 +52,7 @@ jQuery(function ($) {
         });
     });
 
-    //Menu*
+    //Menu
     $('.menu__burger').click(function(){
         $('.hdr__menu-wrap').toggleClass('open');
     });
@@ -66,5 +66,10 @@ jQuery(function ($) {
 
     $('.sub__menu-close').click(function(){
         $(this).parent('.hdr__menu-item').parent('.sub__menu').removeClass('open');
+    });
+
+    //Burger-menu
+    $('.menu__burger').on('click', function(){
+        $(this).toggleClass('menu__burger--active');
     });
 });
