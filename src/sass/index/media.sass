@@ -172,10 +172,11 @@
 
     .menu__burger
         position: relative
+        margin-right: 12px
         display: block
         cursor: pointer
         width: 30px
-        height: 24px
+        height: 20px
         border-top: 2px solid $color-primary-dark
         border-bottom: 2px solid $color-primary-dark
         transition: border-color .25s
@@ -241,6 +242,16 @@
         font-size: 100px
 
 @media only screen and (max-width: 767px)
+    .nav__inner
+        padding: 40px 0 50px
+
+    .nav__title
+        font-size: 40px
+        max-width: 100%
+
+    .nav__link
+        font-size: 16px
+
     .hdr
         padding: 0
 
@@ -261,15 +272,25 @@
         padding: 10px 40px
 
 @media only screen and (max-width: 575px)
+    .footer
+        font-size: 14px
     .ftr__contacts
         display: flex
         flex-direction: column
         align-items: center
         text-align: center
         justify-content: center
+        margin: 50px auto 40px
 
     .ftr__address
         margin-bottom: 20px
+
+    .ftr__soc-link
+        margin: 0 12px
+    
+    .ftr__soc-icon
+        width: 30px
+        height: 30px
 
 @media only screen and (max-width: 480px)
     .hdr__desc
@@ -291,4 +312,14 @@
 
     .intro__bot-link
         padding: 7px 40px
+
+@media only screen and (max-width: 425px)
+    .nav,
+    .nav__inner
+        min-height: 50vh
+    .nav__title
+        font-size: 30px
+        margin-bottom: 70px
+    .nav__link
+        font-size: 14px
 
