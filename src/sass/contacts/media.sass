@@ -22,3 +22,12 @@
 
     .cts__map-container
         height: 400px
+        width: 90%
+        border-right: 2px solid $color-primary-light
+        position: relative
+        &:before
+            content: 'Прокрутка'
+            top: 50%
+            right: -57px
+            position: absolute
+            transform: rotate(-90deg) translateX(25%)
