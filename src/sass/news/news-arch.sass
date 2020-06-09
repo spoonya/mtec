@@ -1,6 +1,6 @@
 .news-arch
     padding: 70px 0
-    
+
 .news-arch__inner
     display: flex
     justify-content: center
@@ -56,19 +56,19 @@
     opacity: .5
 
 .news-arch__item-img-wrap
-    position: relative 
+    position: relative
     overflow: hidden
     height: 100%
     width: 80%
 
 .news-arch__item-img
     z-index: -1
-    
+
     max-height: 250px
     min-height: 250px
-    
+
     transition: transform .2s ease-out
-    
+
     object-fit: cover
 
 .news-arch__content
@@ -76,33 +76,36 @@
     padding: 10px
     display: flex
     flex-direction: column
-    width: 100%    
+    justify-content: space-between
+    width: 100%
 
 .news-arch__txt
     font-size: 15px
     overflow: hidden
-    height: 66%
-    
+    max-height: 150px
+    margin-bottom: 20px
+
 .news-arch__item-info
     color: $color-tertiary-dark
     display: flex
-    justify-content: space-between  
+    justify-content: space-between
     font-weight: 500
     font-size: 14px
-    position: absolute
+    // position: absolute
     bottom: 0
     left: 0
     width: 100%
-    padding: 10px
+    // padding: 10px
 
 .news-arch__item-views-wrap
     display: flex
     align-items: center
 
-.news-arch__icon 
+.news-arch__icon
     @include icon
-    
+
 .pag
+    max-width: 100%
     display: flex
     justify-content: space-between
     align-items: center
