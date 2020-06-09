@@ -10,45 +10,36 @@ section.nav(style='background-image: linear-gradient(180deg, #000000 0%, rgba(0,
             a.nav__link.nav__link--active(href="spec-4.html") Программирование
 
 //- Specs
-section.specs.container
-    //- .specs__inner
-    //-     p.specs__info <span>Специальность:</span> 2-40-01 01 «Программное обеспечение информационных технологий».
-    //-     .specs__info <span>Специализация:</span>
-    //-         p.specs__info-item на основе общего базового образования – системное программирование;
-    //-         p.specs__info-item на основе общего среднего образования – программное обеспечение обработки экономической и деловой информации.
-    //-     p.specs__info <span>Форма обучения:</span> дневная, платная.
-    //-     p.specs__info <span>Квалификация:</span> техник-программист (дополнительно оператор ЭВМ).
-    //-     .specs__info <span>Сроки обучения:</span>
-    //-         p.specs__info-item на основе общего базового образования – 3 года 10 месяцев;
-    //-         p.specs__info-item на основе общего среднего образования – 2 года 10 месяцев.
-    //-     p.specs__info <span>Вступительные испытания:</span> конкурс среднего балла документа об образовании.
-    //-     .specs__info <span>План приёма:</span> 50.
+.container
+    section.specs
+        h3.specs__info-code 2-40-01 01 «Программное обеспечение информационных технологий»
+        .specs__inner
+            .specs__item
+                .specs__item-title
+                    p 9
+                    p классов
+                .specs__content
+                    p.specs__info <span>Специализация:</span> системное программирование.
+                    p.specs__info <span>Форма обучения:</span> дневная, платная.
+                    p.specs__info <span>Квалификация:</span> техник-программист (дополнительно оператор ЭВМ).
+                    p.specs__info <span>Срок обучения:</span> 3 года 10 месяцев.
+                    p.specs__info <span>Вступительные испытания:</span> конкурс среднего балла документа об образовании.
+                    p.specs__info <span>План приёма:</span> 25.
 
-    h3.specs__info-code 2-40-01 01 «Программное обеспечение информационных технологий»
-    .specs__inner
-        .specs__item
-            .specs__item-title
-                p 9
-                p классов
-            .specs__content
-                p.specs__info <span>Специализация:</span> системное программирование.
-                p.specs__info <span>Форма обучения:</span> дневная, платная.
-                p.specs__info <span>Квалификация:</span> техник-программист (дополнительно оператор ЭВМ).
-                p.specs__info <span>Срок обучения:</span> 3 года 10 месяцев.
-                p.specs__info <span>Вступительные испытания:</span> конкурс среднего балла документа об образовании.
-                p.specs__info <span>План приёма:</span> 25.
+            .specs__item
+                .specs__item-title
+                    p 11
+                    p классов
+                .specs__content
+                    p.specs__info <span>Специализация:</span> программное обеспечение обработки экономической и деловой информации.
+                    p.specs__info <span>Форма обучения:</span> дневная, платная.
+                    p.specs__info <span>Квалификация:</span> техник-программист (дополнительно оператор ЭВМ).
+                    p.specs__info <span>Срок обучения:</span> 2 года 10 месяцев.
+                    p.specs__info <span>Вступительные испытания:</span> конкурс среднего балла документа об образовании.
+                    p.specs__info <span>План приёма:</span> 25.
 
-        .specs__item
-            .specs__item-title
-                p 11
-                p классов
-            .specs__content
-                p.specs__info <span>Специализация:</span> программное обеспечение обработки экономической и деловой информации.
-                p.specs__info <span>Форма обучения:</span> дневная, платная.
-                p.specs__info <span>Квалификация:</span> техник-программист (дополнительно оператор ЭВМ).
-                p.specs__info <span>Срок обучения:</span> 2 года 10 месяцев.
-                p.specs__info <span>Вступительные испытания:</span> конкурс среднего балла документа об образовании.
-                p.specs__info <span>План приёма:</span> 25.
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/phhgonF5VgM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        section.specs__video-section
+            .specs__video-wrap
+                .specs__video-block
+                    iframe.specs__video(src="https://www.youtube.com/embed/phhgonF5VgM", frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
 include pug_includes/footer.pug
