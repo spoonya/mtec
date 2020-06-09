@@ -9,45 +9,31 @@ section.nav(style='background-image: linear-gradient(180deg, #000000 0%, rgba(0,
             a.nav__link(href="index.html#spec") Специальности
             a.nav__link.nav__link--active(href="spec-1.html") Правоведение
 
-.specs
-    .container
-        //- .specs__inner
-        //-     p.specs__info <span>Специальность:</span> 2-24 01 02 «Правоведение».
-        //-     p.specs__info <span>Специализация:</span> хозяйственно-правовая и кадровая работа.
-        //-     p.specs__info <span>Квалификация:</span> юрист.
-        //-     p.specs__info <span>Форма обучения:</span> дневная, заочная, платная.
-        //-     .specs__info <span>Сроки обучения:</span>
-        //-         p.specs__info-item на основе общего базового образования – 2 года 10 месяцев;
-        //-         p.specs__info-item на основе общего среднего образования (дневная) – 1 год 10 месяцев;
-        //-         p.specs__info-item на основе общего среднего образования (заочная) – 2 года 7 месяцев.
-        //-     p.specs__info <span>Вступительные испытания:</span> конкурс среднего балла документа об образовании.
-        //-     .specs__info <span>План приёма:</span>
-        //-         p.specs__info-item дневное – 56;
-        //-         p.specs__info-item заочное – 30.
+.container
+    section.specs
+        h3.specs__info-code 2-24 01 02 «Правоведение»
+        .specs__inner
+            .specs__item
+                .specs__item-title
+                    p 9
+                    p классов
+                .specs__content
+                    p.specs__info <span>Специализация:</span> хозяйственно-правовая и кадровая работа.
+                    p.specs__info <span>Форма обучения:</span> дневная, платная.
+                    p.specs__info <span>Квалификация:</span> юрист.
+                    p.specs__info <span>Срок обучения:</span> 2 года 10 месяцев.
+                    p.specs__info <span>Вступительные испытания:</span> конкурс среднего балла документа об образовании.
+                    p.specs__info <span>План приёма:</span> 28.
 
-    h3.specs__info-code 2-24 01 02 «Правоведение»
-    .specs__inner
-        .specs__item
-            .specs__item-title
-                p 9
-                p классов
-            .specs__content
-                p.specs__info <span>Специализация:</span> хозяйственно-правовая и кадровая работа.
-                p.specs__info <span>Форма обучения:</span> дневная, платная.
-                p.specs__info <span>Квалификация:</span> юрист.
-                p.specs__info <span>Срок обучения:</span> 2 года 10 месяцев.
-                p.specs__info <span>Вступительные испытания:</span> конкурс среднего балла документа об образовании.
-                p.specs__info <span>План приёма:</span> 28.
-
-        .specs__item
-            .specs__item-title
-                p 11
-                p классов
-            .specs__content
-                p.specs__info <span>Специализация:</span> хозяйственно-правовая и кадровая работа.
-                p.specs__info <span>Форма обучения:</span> дневная, заочная, платная.
-                p.specs__info <span>Квалификация:</span> юрист.
-                .specs__info <span>Сроки обучения:</span> дневная форма – 1 год 10 месяцев, заочная форма – 2 года 7 месяцев.
-                p.specs__info <span>Вступительные испытания:</span> конкурс среднего балла документа об образовании.
-                .specs__info <span>План приёма:</span> дневное – 28, заочное – 30.
+            .specs__item
+                .specs__item-title
+                    p 11
+                    p классов
+                .specs__content
+                    p.specs__info <span>Специализация:</span> хозяйственно-правовая и кадровая работа.
+                    p.specs__info <span>Форма обучения:</span> дневная, заочная, платная.
+                    p.specs__info <span>Квалификация:</span> юрист.
+                    .specs__info <span>Сроки обучения:</span> дневная форма – 1 год 10 месяцев, заочная форма – 2 года 7 месяцев.
+                    p.specs__info <span>Вступительные испытания:</span> конкурс среднего балла документа об образовании.
+                    .specs__info <span>План приёма:</span> дневное – 28, заочное – 30.
 include pug_includes/footer.pug

@@ -9,65 +9,66 @@ section.nav(style='background-image: linear-gradient(180deg, #000000 0%, rgba(0,
             a.nav__link.nav__link--active(href="students.html") Учащимся
 
 //- Schedule
-section.sched.container
-    h2.sched__title Скорректированное Расписание
-    //- ul.abs__list
-    //-     li.abs__list-item: a(href="#") Расписание для 1-4 курсов в разрезе групп(pdf)
-    //-     li.abs__list-item: a(href="#") Расписание для 1-4 курсов в разрезе преподавателей (pdf)
-    .sched__inner
-        .sched__item
-            a.sched__item-link(href="#")
-            .sched__item-wrap
-                svg.sched__item-icon
-                    use(xlink:href="#student")
-                h3.sched__item-title Расписание для 1-4 курсов в разрезе групп
+.container
+    section.sched
+        h2.sched__title Скорректированное Расписание
+        //- ul.abs__list
+        //-     li.abs__list-item: a(href="#") Расписание для 1-4 курсов в разрезе групп(pdf)
+        //-     li.abs__list-item: a(href="#") Расписание для 1-4 курсов в разрезе преподавателей (pdf)
+        .sched__inner
+            .sched__item
+                a.sched__item-link(href="#")
+                .sched__item-wrap
+                    svg.sched__item-icon
+                        use(xlink:href="#student")
+                    h3.sched__item-title Расписание для 1-4 курсов в разрезе групп
 
-        .sched__item
-            a.sched__item-link(href="#")
-            .sched__item-wrap
-                svg.sched__item-icon
-                    use(xlink:href="#teacher")
-                h3.sched__item-title Расписание для 1-4 курсов в разрезе преподавателей
+            .sched__item
+                a.sched__item-link(href="#")
+                .sched__item-wrap
+                    svg.sched__item-icon
+                        use(xlink:href="#teacher")
+                    h3.sched__item-title Расписание для 1-4 курсов в разрезе преподавателей
 
-//- Abs
-section.abs.container
-    h2.abs__title Заочное отделение
-    ul.abs__list
-        h3.abs__subtitle Календарь экзаменационных сессий на заочном отделении
-        li.abs__list-item: a(href="#") Календарь
+    //- Abs
+    section.abs
+        h2.abs__title Заочное отделение
+        ul.abs__list
+            h3.abs__subtitle Календарь экзаменационных сессий на заочном отделении
+            li.abs__list-item: a(href="#") Календарь
 
-    ul.abs__list
-        h3.abs__subtitle Расписание
-        li.abs__list-item: a(href="#") 29.05.2020 - Журнал учёта домашних контрольных работ 2019-2020 г
-        li.abs__list-item: a(href="#") Программа государственных экзаменов (заочное отделение, специальность "Коммерческая деятельность")
-        li.abs__list-item: a(href="#") Программа государственных экзаменов (заочное отделение, специальность "Бухгалтерский учёт, анализ и контроль")
-        li.abs__list-item: a(href="#") Расписание для П1
-        li.abs__list-item: a(href="#") Списки учащихся первого курса заочного отделения 2019-2020 учебный год
+        ul.abs__list
+            h3.abs__subtitle Расписание
+            li.abs__list-item: a(href="#") 29.05.2020 - Журнал учёта домашних контрольных работ 2019-2020 г
+            li.abs__list-item: a(href="#") Программа государственных экзаменов (заочное отделение, специальность "Коммерческая деятельность")
+            li.abs__list-item: a(href="#") Программа государственных экзаменов (заочное отделение, специальность "Бухгалтерский учёт, анализ и контроль")
+            li.abs__list-item: a(href="#") Расписание для П1
+            li.abs__list-item: a(href="#") Списки учащихся первого курса заочного отделения 2019-2020 учебный год
 
-//- Day
-section.day.container
-    h2.day__title Дневное отделение
+    //- Day
+    section.day
+        h2.day__title Дневное отделение
 
-    h3.day__subtitle Расписание
-    img.day__img(src="img/students/s1.jpg", alt="Расписание")
-    img.day__img(src="img/students/s2.jpg", alt="Расписание")
+        h3.day__subtitle Расписание
+        img.day__img(src="img/students/s1.jpg", alt="Расписание")
+        img.day__img(src="img/students/s2.jpg", alt="Расписание")
 
-    h3.day__subtitle Расписание звонков
-    img.day__img(src="img/students/s3.jpg", alt="Расписание звонков")
+        h3.day__subtitle Расписание звонков
+        img.day__img(src="img/students/s3.jpg", alt="Расписание звонков")
 
-    h3.day__subtitle Мониторинг учебной деятельности
-    img.day__img(src="img/students/s4.jpg", alt="Мониторинг учебной деятельности")
-    img.day__img(src="img/students/s5.jpg", alt="Расписание")
+        h3.day__subtitle Мониторинг учебной деятельности
+        img.day__img(src="img/students/s4.jpg", alt="Мониторинг учебной деятельности")
+        img.day__img(src="img/students/s5.jpg", alt="Расписание")
 
-    h3.day__subtitle Нормативные документы
-    .day__txt
-        p.day__txt-item Постановление совета министров Республики Беларусь от 11 июля 2011 г. № 941 &laquo;О некоторых вопросах среднего специального образования&raquo;
-        p.day__txt-item Положение о практике учащихся, курсантов, осваивающих содержание образовательных программ среднего специального образования
-            a.day__txt-item-link(href="#") (скачать)
-        p.day__txt-item Рекомендации по оформлению прохождения производственной практики учащимися колледжа
-            a.day__txt-item-link(href="#") (скачать)
-        p.day__txt-item График проведения консультаций по субботам по технологической практике (специальности: Бухгалтерский учёт, анализ и контроль; Коммерческая деятельность (по направлениям)) для учащихся 3-го курса дневного отделения
-            a.day__txt-item-link(href="#") (скачать)
-    img.day__img(src="img/students/s6.jpg", alt="График проведения консультаций")
+        h3.day__subtitle Нормативные документы
+        .day__txt
+            p.day__txt-item Постановление совета министров Республики Беларусь от 11 июля 2011 г. № 941 &laquo;О некоторых вопросах среднего специального образования&raquo;
+            p.day__txt-item Положение о практике учащихся, курсантов, осваивающих содержание образовательных программ среднего специального образования
+                a.day__txt-item-link(href="#") (скачать)
+            p.day__txt-item Рекомендации по оформлению прохождения производственной практики учащимися колледжа
+                a.day__txt-item-link(href="#") (скачать)
+            p.day__txt-item График проведения консультаций по субботам по технологической практике (специальности: Бухгалтерский учёт, анализ и контроль; Коммерческая деятельность (по направлениям)) для учащихся 3-го курса дневного отделения
+                a.day__txt-item-link(href="#") (скачать)
+        img.day__img(src="img/students/s6.jpg", alt="График проведения консультаций")
 
 include pug_includes/footer.pug
