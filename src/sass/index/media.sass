@@ -1,10 +1,12 @@
 @media only screen and (max-width: 1310px)
+    // Intro
     .intro__social
         right: 0
 
 // @media only screen and (max-width: 1199px)
 
 @media only screen and (min-width: 1080px)
+    // Header
     .hdr__menu
         display: flex
         justify-content: space-between
@@ -87,6 +89,7 @@
         display: none
 
 @media only screen and (max-width: 1079px)
+    // Header
     .menu__burger
         display: block
 
@@ -232,16 +235,41 @@
         &.show
             transform: translate(0)
 
+    // Intro
     .intro__title
         margin-bottom: 150px
         font-size: 110px
 
+    //News
+    .news__item
+        max-width: 31.33333%
+
+    .news__item:nth-last-child(-n+2)
+        display: none
+
+    .news__item-txt
+        max-height: 72px
+        min-height: 72px
+
+
 @media only screen and (max-width: 991px)
+    // Intro
     .intro__title
         margin-bottom: 150px
         font-size: 100px
 
+    //News
+    .news__item-txt
+        max-height: 92px
+        min-height: 92px
+
+    // Spec
+    .spec__item
+        width: 48%
+        margin-bottom: 35px
+
 @media only screen and (max-width: 767px)
+    //Nav
     .nav__inner
         padding: 40px 0 50px
 
@@ -252,12 +280,14 @@
     .nav__link
         font-size: 16px
 
+    // Header
     .hdr
         padding: 0
 
     .hdr__desc
         font-size: 15px
 
+    // Intro
     .intro__social
         padding: 5px
 
@@ -271,9 +301,51 @@
     .intro__bot-link
         padding: 10px 40px
 
+    // News
+    .news__item
+        max-width: 48%
+
+    .news__item-img
+        min-height: 150px
+        max-height: 150px
+
 @media only screen and (max-width: 575px)
+    // News
+    .news__inner
+        flex-direction: column
+        align-items: center
+
+    .news__item
+        max-width: 85%
+
+    .news__item:nth-last-child(-n+4)
+        display: none
+
+    .news__item-img
+        min-height: 200px
+        max-height: 200px
+
+    .news__item-txt
+        max-height: 70px
+        min-height: 70px
+
+    .news__archive-wrap
+        display: flex
+        justify-content: center
+
+    // Spec
+    .spec__inner
+        flex-direction: column
+        align-items: center
+
+    .spec__item
+        width: 85%
+        margin-bottom: 25px
+
+    // Footer
     .footer
         font-size: 14px
+
     .ftr__contacts
         display: flex
         flex-direction: column
@@ -293,9 +365,11 @@
         height: 30px
 
 @media only screen and (max-width: 480px)
+    // Header
     .hdr__desc
         display: none
 
+    // Intro
     .intro__title
         font-size: 60px
 
@@ -308,12 +382,12 @@
 
     .intro__social
         padding: 2px
-        // display: none
 
     .intro__bot-link
         padding: 7px 40px
 
 @media only screen and (max-width: 425px)
+    //Nav
     .nav,
     .nav__inner
         min-height: 50vh
@@ -322,4 +396,12 @@
         margin-bottom: 70px
     .nav__link
         font-size: 14px
+
+    // News
+    .news__item
+        max-width: 100%
+
+    // Spec
+    .spec__item
+        width: 100%
 
