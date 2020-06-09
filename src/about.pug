@@ -65,7 +65,9 @@ section.about.container
         img(src="img/about/gallery/gallery-5.jpg")
         img(src="img/about/gallery/gallery-6.jpg")
 
-    section.about__video-wrap
+    section.about__video-section
         h2.about__title Видео о нас
-        iframe.about__video(width='560', height='315', src='https://www.youtube.com/embed/LSUEBq0XxXw', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
+        .about__video-wrap
+            .about__video-block
+                iframe.about__video(src='https://www.youtube.com/embed/LSUEBq0XxXw', frameborder='0', allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
 include pug_includes/footer.pug
