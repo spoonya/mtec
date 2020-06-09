@@ -1,6 +1,10 @@
-@import 'includes/vars'
+@media only screen and (max-width: 1310px)
+    .intro__social
+        right: 0
 
-@media(min-width: 1080px)
+// @media only screen and (max-width: 1199px)
+
+@media only screen and (min-width: 1080px)
     .hdr__menu
         display: flex
         justify-content: space-between
@@ -82,7 +86,7 @@
     .sub__menu-close,
         display: none
 
-@media(max-width: 1079px)
+@media only screen and (max-width: 1079px)
     .menu__burger
         display: block
 
@@ -226,3 +230,65 @@
             transform: rotate(-45deg) translate(6px, 6px)
         &.show
             transform: translate(0)
+
+    .intro__title
+        margin-bottom: 150px
+        font-size: 110px
+
+@media only screen and (max-width: 991px)
+    .intro__title
+        margin-bottom: 150px
+        font-size: 100px
+
+@media only screen and (max-width: 767px)
+    .hdr
+        padding: 0
+
+    .hdr__desc
+        font-size: 15px
+
+    .intro__social
+        padding: 5px
+
+    .intro__title
+        font-size: 90px
+
+    .intro__bot-txt
+        font-size: 20px
+        max-width: 300px
+
+    .intro__bot-link
+        padding: 10px 40px
+
+@media only screen and (max-width: 575px)
+    .ftr__contacts
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+        justify-content: center
+
+    .ftr__address
+        margin-bottom: 20px
+
+@media only screen and (max-width: 480px)
+    .hdr__desc
+        display: none
+
+    .intro__title
+        font-size: 60px
+
+    .intro__bot
+        flex-direction: column
+        align-items: flex-start
+
+    .intro__bot-txt
+        margin-bottom: 20px
+
+    .intro__social
+        padding: 2px
+        // display: none
+
+    .intro__bot-link
+        padding: 7px 40px
+
