@@ -1,1 +1,19 @@
-// @media only screen and (max-width: 1079px)
+@media only screen and (max-width: 767px)
+    .history__timeline ul li:nth-child(odd)
+        padding-right: 20px
+
+    .history__timeline ul li:nth-child(even)
+        padding-left: 20px
+
+    .history__timeline ul li
+        font-size: 12px
+
+    .history__timeline ul li:nth-child(odd) .history__timeline-time   
+        right: -105px
+
+    .history__timeline ul li:nth-child(even) .history__timeline-time   
+        left: -105px
+
+@media only screen and (max-width: 374px)
+    .history__timeline ul li
+        font-size: 11px

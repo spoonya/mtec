@@ -4,6 +4,7 @@
 .history__timeline
     position: relative
     width: 1000px
+    max-width: 100%
     margin: 0 auto
     width: 100%
     padding: 50px 0
@@ -20,16 +21,18 @@
 
 .history__timeline ul li
     width: 50%
-    padding: 20px 40px
+    padding: 20px 0
     position: relative
     margin-bottom: 30px
 
 .history__timeline ul li:nth-child(odd)
     text-align: right
+    padding-right: 40px
 
 .history__timeline ul li:nth-child(even)
     text-align: left
-    margin-left: 50%
+    padding-left: 40px
+    left: 50%
 
 .history__timeline ul li:nth-child(odd)::before
     display: block
@@ -58,12 +61,12 @@
 .history__timeline ul li:nth-child(odd) .history__timeline-time   
     position: absolute
     top: 10px
-    right: -22%
+    right: -120px
 
 .history__timeline ul li:nth-child(even) .history__timeline-time   
     position: absolute
     top: 10px
-    left: -22%
+    left: -120px
 
 .history__timeline-time h4
     display: inline-block
