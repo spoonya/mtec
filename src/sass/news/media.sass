@@ -8,18 +8,14 @@
     .news-arch__item-img-wrap
         width: 60%
 
-    // Pag
-    a.pag__num
-        width: 20px
-        height: 20px
-        font-size: 16px
-        margin: 0 5px
-
     .pag__prev
         margin-right: 10px
 
     .pag__next
         margin-left: 10px
+
+    .pag__num:nth-child(6)
+        display: none
 
 @media only screen and (max-width: 575px)
     .news-arch__item
@@ -30,11 +26,16 @@
         width: 100%
         height: 50%
 
-    // .news-arch__txt
-    //     max-height: 20%
-
     .news-arch__item-img
         min-height: 180px
         max-height: 180px
 
-//@media only screen and (max-width: 480px)
+@media only screen and (max-width: 480px)
+    .pag__num:nth-child(5)
+        display: none
+
+    a.pag__num
+        width: 30px
+        height: 30px
+        font-size: 16px
+        margin: 0 5px
