@@ -1,18 +1,22 @@
 .abitur
     padding-bottom: 40px
-    
+
 .abitur__title
     @include title
     margin: 60px auto 40px
 
 .abitur__list-item
+    &::before
+        content: '–'
+        display: inline
+        margin-right: 5px
     a
         @include default-link
 
 .abitur__text
     margin-bottom: 20px
 
-.abitur__table 
+.abitur__table
     border: 1px solid $color-tertiary-dark
     border-collapse: collapse
     margin-top: 40px
